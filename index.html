@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vsevolod Brekelov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/" class="logo">VB</a>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="assets/cv.pdf" class="cv-link" download>CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Hey, I'm Seva 👋</h1>
+                <p>I'm a software engineer who loves building products and web applications that solve real-world problems.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/brekelov" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/volekerb" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/brekelov/details/experience/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="assets/BrekelovSevaCV.pdf" class="cv-button" download>CV</a>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <a href="#" class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Brief description of an exciting project that showcases your skills and impact.</p>
+                    </a>
+                    <a href="#" class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Another innovative project that demonstrates your technical expertise and creativity.</p>
+                    </a>
+                    <a href="#" class="project-card">
+                        <h3>Project 3</h3>
+                        <p>A unique solution to a complex problem that highlights your problem-solving abilities.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I'm a passionate software engineer focused on crafting clean, user-friendly solutions. I enjoy working on challenging projects that push the boundaries of what's possible on the web.</p>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Technologies</h3>
+                            <ul>
+                                <li>Java / Kotlin</li>
+                                <li>JavaScript / TypeScript</li>
+                                <li>Go</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out if you'd like to collaborate on a project or just want to connect.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Vsevolod Brekelov. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

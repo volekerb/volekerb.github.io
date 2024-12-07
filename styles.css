@@ -1,0 +1,280 @@
+/* Reset and Base Styles */
+:root {
+    --background: #fff;
+    --text: #111827;
+    --text-secondary: #4b5563;
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --border: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation */
+header {
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--text);
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0;
+    text-align: left;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--text);
+}
+
+.cv-button {
+    background-color: var(--primary);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease !important;
+}
+
+.cv-button:hover {
+    background-color: var(--primary-dark);
+    color: white !important;
+}
+
+.cv-link {
+    color: var(--primary) !important;
+}
+
+.cv-link:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+    color: var(--text);
+}
+
+.project-card p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+.skills li {
+    padding: 0.5rem 1rem;
+    background-color: #f3f4f6;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.375rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+    padding: 4rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
