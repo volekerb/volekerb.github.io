@@ -25,9 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // TODO: Replace with actual form submission logic
-        // For now, just show a success message
-        alert('Message sent successfully! I will get back to you soon.');
+        // Create mailto link with predefined subject and body
+        const mailtoLink = `mailto:vsevolod.brekelov@gmail.com?subject=From brekelov.com - ${encodeURIComponent(name)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
         
         // Reset form
         this.reset();
